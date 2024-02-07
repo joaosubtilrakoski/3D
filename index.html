@@ -4,49 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Athletico Paranaense</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        section {
+            padding: 20px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .gallery img {
+            margin: 10px;
+            max-width: 300px;
+            max-height: 200px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Athletico Paranaense</h1>
-        <nav>
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#elenco">Elenco</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="sobre">
-            <h2>Sobre o Athletico Paranaense</h2>
-            <p>O Athletico Paranaense é um clube de futebol brasileiro sediado em Curitiba, no estado do Paraná.</p>
-        </section>
-        <section id="elenco">
-            <h2>Elenco</h2>
-            <ul>
-                <li>Goleiros: Santos, Bento</li>
-                <li>Zagueiros: Thiago Heleno, Pedro Henrique, Zé Ivaldo</li>
-                <li>Meio-Campistas: Richard, Christian, Fernando Canesin</li>
-                <li>Atacantes: Nikão, Renato Kayzer, Vitinho</li>
-            </ul>
-        </section>
-        <section id="contato">
-            <h2>Contato</h2>
-            <p>Entre em contato conosco:</p>
-            <form>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Athletico Paranaense</p>
-    </footer>
+
+<header>
+    <h1>Athletico Paranaense</h1>
+</header>
+
+<nav>
+    <a href="#estadio">Estádio</a>
+    <a href="#time">Time</a>
+    <a href="#torcida">Torcida</a>
+</nav>
+
+<section id="estadio">
+    <h2>Estádio</h2>
+    <div class="gallery">
+        <img src="estadio1.jpg" alt="Estádio do Athletico Paranaense">
+        <img src="estadio2.jpg" alt="Estádio do Athletico Paranaense">
+    </div>
+</section>
+
+<section id="time">
+    <h2>Time</h2>
+    <p>O Athletico Paranaense é um dos principais clubes de futebol do estado do Paraná, fundado em 1924. Seu uniforme tradicional é composto por camisa listrada em vermelho e preto, calção preto e meias vermelhas.</p>
+    <div class="gallery">
+        <img src="time1.jpg" alt="Time do Athletico Paranaense">
+        <img src="time2.jpg" alt="Time do Athletico Paranaense">
+    </div>
+</section>
+
+<section id="torcida">
+    <h2>Torcida</h2>
+    <p>A torcida do Athletico Paranaense é conhecida como "Furacão" e é uma das mais apaixonadas e fiéis do Brasil. Sempre comparece em grande número nos jogos do clube, criando uma atmosfera única no estádio.</p>
+    <div class="gallery">
+        <img src="torcida1.jpg" alt="Torcida do Athletico Paranaense">
+        <img src="torcida2.jpg" alt="Torcida do Athletico Paranaense">
+    </div>
+</section>
+
 </body>
 </html>
